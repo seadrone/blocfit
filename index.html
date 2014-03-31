@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blocfit</title>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+  <div class="contain-to-grid">
+
+    <nav class="top-bar" data-topbar>
+
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#" class="effect">Blocfit</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+      </ul>  
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="#">My Dashboard</a></li>
+        </ul>
+      </section>
+
+    </nav>
+
+  </div>  <!-- end .contain-to-grid -->
+
+  <div id="profile" class="row">
+
+    <div class="large-2 columns face">
+      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/moynihan/128.jpg" alt="avatar">
+    </div>
+
+    <div class="large-10 columns">
+      <h1 class="name">Michael Scott</h1>
+      <p class="bio">I'm a 28-year-old banker from Chicago, IL. I love running, playing golf and keeping up with my favorite TV shows.</p>
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter"></i>@michaelscott</a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i>michaelscott</a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i>facebook.com/michaelscott</a></li>
+      </ul>
+    </div>
+
+  </div>  <!-- end #profile -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="panel">
+        <h2>Your Weekly Run Totals</h2>
+        <canvas id="runTotal" height="200" width="940"></canvas>
+      </div>
+    </div>
+  </div>  <!-- end .row -->
+
+  <div class="row">
+    <div class="large-4 columns doughnut">
+      <div class="panel">
+        <h2>Weekly Goal</h2>
+        <canvas id="weeklyGoal" height="200" width="200"></canvas>
+        <h3 class="week">10% <span>complete</span></h3>
+        <p>You have only met <b>10%</b> of your goal this week. There are <b>three</b> days left.</p>
+      </div>
+    </div>
+
+    <div class="large-4 columns doughnut">
+      <div class="panel">
+        <h2>Monthly Goal</h2>
+        <canvas id="monthlyGoal" height="200" width="200"></canvas>
+        <h3 class="week">95% <span>complete</span></h3>
+        <p>You have met <b>95%</b> of your goal this week. Way to go!</p>
+      </div>
+    </div>
+
+    <div class="large-4 columns doughnut">
+      <div class="panel">
+        <h2>Annual Goal</h2>
+        <canvas id="annualGoal" height="200" width="200"></canvas>
+        <h3 class="week">72% <span>complete</span></h3>
+        <p>You have met <b>72%</b> of your goal this week. Nearly there. You can do it!</p>
+      </div>
+    </div>
+
+  </div>    <!-- end .row -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <p>&copy; 2014. Blocfit. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
